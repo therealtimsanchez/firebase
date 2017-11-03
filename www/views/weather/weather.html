@@ -1,0 +1,11 @@
+<ion-view view-title="Current Weather">
+  <ion-content>
+    <div class="list">
+      <div class="item"><strong>Current Conditions:</strong> {{wc.selected_city.weather.current_conditions}}</div>
+      <div class="item"><strong>Temperature:</strong> {{wc.selected_city.weather.temperature}}&deg;</div>
+      <div class="item"><strong>Humidity:</strong> {{wc.selected_city.weather.humidity * 100}}%</div>
+      <div class="item"><strong>Air Pressure:</strong> {{wc.selected_city.weather.pressure}} HPa</div>
+      <div class="item"><strong>Wind:</strong> {{wc.selected_city.weather.wind_speed}}mph, from the {{wc.selected_city.weather.wind_direction | direction}}</div>
+    </div>
+  </ion-content>
+</ion-view>
